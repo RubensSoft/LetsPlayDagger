@@ -5,5 +5,5 @@ import javax.inject.Singleton
 
 @Component
 interface CarComponent {
-    fun getCart(): Car
+    fun inject(mainActivity: MainActivity)
 }
