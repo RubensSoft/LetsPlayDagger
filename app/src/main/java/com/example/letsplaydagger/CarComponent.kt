@@ -1,11 +1,13 @@
 package com.example.letsplaydagger
 
+import com.example.letsplaydagger.modules.PetrolEnginModule
+import com.example.letsplaydagger.modules.WheelsModule
 import dagger.Component
-import javax.inject.Singleton
 
 @Component(
     modules = [
-        WheelsModule::class
+        WheelsModule::class,
+        PetrolEnginModule::class
     ]
 )
 interface CarComponent {

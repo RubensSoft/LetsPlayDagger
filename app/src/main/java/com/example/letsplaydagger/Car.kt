@@ -1,6 +1,7 @@
 package com.example.letsplaydagger
 
 import android.util.Log
+import com.example.letsplaydagger.engine.Engine
 import com.example.letsplaydagger.wheelFramework.WheelsFramework
 import javax.inject.Inject
 
@@ -19,6 +20,7 @@ class Car @Inject constructor(
     }
 
     fun drive() {
+        engine.start()
         Log.d(TAG, "driving...")
     }
 }
