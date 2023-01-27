@@ -1,8 +1,10 @@
 package com.example.letsplaydagger
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.letsplaydagger.car.Car
+import com.example.letsplaydagger.dagger.DaggerCarComponent
+import com.example.letsplaydagger.dagger.modules.DieselEngineModule
 import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
@@ -14,7 +16,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val carComponent = DaggerCarComponent.create()
+        val dieselEngineModule = DieselEngineModule(100)
+        val carComponent = DaggerCarComponent.builder()
+            .dieselEngineModule(dieselEngineModule)
+            .build()
         carComponent.inject(this)
 
         car.drive()

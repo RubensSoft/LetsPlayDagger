@@ -1,14 +1,14 @@
 package com.example.letsplaydagger.dagger
 
 import com.example.letsplaydagger.MainActivity
-import com.example.letsplaydagger.dagger.modules.DieselEnginModule
+import com.example.letsplaydagger.dagger.modules.DieselEngineModule
 import com.example.letsplaydagger.dagger.modules.WheelsModule
 import dagger.Component
 
 @Component(
     modules = [
         WheelsModule::class,
-        DieselEnginModule::class
+        DieselEngineModule::class
     ]
 )
 interface CarComponent {
