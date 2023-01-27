@@ -1,16 +1,16 @@
-package com.example.letsplaydagger.engine
+package com.example.letsplaydagger.car.engine
 
 import android.util.Log
 import javax.inject.Inject
 
-class DieselEngine @Inject constructor() : Engine {
+class PetrolEngine @Inject constructor() : Engine {
 
     companion object {
         private const val TAG = "Car"
     }
 
     override fun start() {
-        Log.d(TAG, "Diesel engine started")
+        Log.d(TAG, "Petrol engine started")
     }
 
 }

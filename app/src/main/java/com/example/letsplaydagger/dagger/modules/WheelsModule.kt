@@ -1,8 +1,8 @@
-package com.example.letsplaydagger.modules
+package com.example.letsplaydagger.dagger.modules
 
-import com.example.letsplaydagger.wheelFramework.Rims
-import com.example.letsplaydagger.wheelFramework.Tires
-import com.example.letsplaydagger.wheelFramework.WheelsFramework
+import com.example.letsplaydagger.car.wheelFramework.Rims
+import com.example.letsplaydagger.car.wheelFramework.Tires
+import com.example.letsplaydagger.car.wheelFramework.WheelsFramework
 import dagger.Module
 import dagger.Provides
 

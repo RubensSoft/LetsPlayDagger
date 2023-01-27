@@ -1,8 +1,8 @@
-package com.example.letsplaydagger
+package com.example.letsplaydagger.car
 
 import android.util.Log
-import com.example.letsplaydagger.engine.Engine
-import com.example.letsplaydagger.wheelFramework.WheelsFramework
+import com.example.letsplaydagger.car.engine.Engine
+import com.example.letsplaydagger.car.wheelFramework.WheelsFramework
 import javax.inject.Inject
 
 class Car @Inject constructor(

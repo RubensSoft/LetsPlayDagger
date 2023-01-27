@@ -1,4 +1,4 @@
-package com.example.letsplaydagger
+package com.example.letsplaydagger.car
 
 import android.util.Log
 import javax.inject.Inject
