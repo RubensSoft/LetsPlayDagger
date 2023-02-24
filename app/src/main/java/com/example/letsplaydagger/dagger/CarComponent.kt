@@ -1,12 +1,15 @@
 package com.example.letsplaydagger.dagger
 
 import com.example.letsplaydagger.MainActivity
+import com.example.letsplaydagger.car.Car
 import com.example.letsplaydagger.dagger.modules.PetrolEnginModule
 import com.example.letsplaydagger.dagger.modules.WheelsModule
 import dagger.BindsInstance
 import dagger.Component
 import javax.inject.Named
+import javax.inject.Singleton
 
+@Singleton
 @Component(
     modules = [
         WheelsModule::class,
@@ -15,6 +18,7 @@ import javax.inject.Named
 )
 interface CarComponent {
     fun inject(mainActivity: MainActivity)
+    fun getCar(): Car
 
     @Component.Builder
     interface Builder {

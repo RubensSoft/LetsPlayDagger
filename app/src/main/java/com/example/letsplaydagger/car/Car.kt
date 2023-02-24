@@ -7,7 +7,8 @@ import javax.inject.Inject
 
 class Car @Inject constructor(
     private val engine: Engine,
-    private val wheels: WheelsFramework
+    private val wheels: WheelsFramework,
+    private val driver: Driver
 ) {
 
     companion object {
@@ -21,6 +22,6 @@ class Car @Inject constructor(
 
     fun drive() {
         engine.start()
-        Log.d(TAG, "driving...")
+        Log.d(TAG, "$driver drives $this")
     }
 }
